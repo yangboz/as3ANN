@@ -57,7 +57,7 @@
 		<dependency>
 			<groupId>com.godpaper.as3</groupId>
 			<artifactId>as3Logger</artifactId>
-			<version>[0.0.1, ]</version>
+			<version>[0.0.1-SNAPSHOT, ]</version>
 			<type>swc</type>
 		</dependency>
 	</dependencies>
