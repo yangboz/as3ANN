@@ -1,5 +1,6 @@
 package com.lookbackon.AI.ANN
 {
+	import mx.collections.ArrayCollection;
 
 	public class NeuralNetWork
 	{
@@ -25,12 +26,12 @@ package com.lookbackon.AI.ANN
 		/// An INPUT represented as double [,] inputDataArray = new Double [,]
 		/// {{0.20, 0.80}, {0.80, 0.4}} would represent 2 training instances
 		/// for an INPUT LAYER with 2 NEURONS or CELLS
-		public var input_data:Array;
+		public var input_data:ArrayCollection;
 		/// A two dimensional array of output data from a training sample
 		/// An OUTPUT represented as double [,] outputDataArray = new Double [,]
 		/// {{0}, {1}} would represent 2 training instances
 		/// for an OUTPUT LAYER with 1 NEURON or CELL
-		public var output_data:Array;
+		public var output_data:ArrayCollection;
 		/// A collection of neurons representing the input layer
 		private var inputNeurons:Neurons;
 		/// A collection of neurons representing the hidden layer
@@ -63,7 +64,7 @@ package com.lookbackon.AI.ANN
 		//----------------------------------
 		//  initialize(native)
 		//----------------------------------
-		public function initialize(inputData:Array,outputData:Array,hidden_layer_count:int):void
+		public function initialize(inputData:ArrayCollection,outputData:ArrayCollection,hidden_layer_count:int):void
 		{
 			this.input_data = inputData;
 			input_count = (this.input_data.length+1);//
